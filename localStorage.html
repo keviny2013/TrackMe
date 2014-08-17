@@ -1,0 +1,79 @@
+<!DOCTYPE HTML>
+<html>	
+	
+	<head>
+		<meta charset="UTF-8">
+		<title>JS local storage</title>
+		
+		<script type="text/javascript" src="js/varDump.js"></script>
+		<script type="text/javascript">
+
+	function add2Store()
+	{
+		localStorage.kevinA = 'yilmaz1';
+		localStorage['aylaB'] = 'arici2';
+		localStorage.setItem('cemC', 'ekinci3');
+
+			var device = {
+				'deviceid' : 2,
+				'countryid' : 1,
+				'countryName' :  'USA',
+				'dateAdded' :  '131227'
+			};
+			deviceStr = JSON.stringify(device); 
+			localStorage.setItem('device11', deviceStr);	
+	}
+
+		</script>
+	
+	</head>
+
+<body>
+<h3>JS local storage</h3>
+	<div id="container" style="border: 3px black solid"></div>
+	<h3>STORE</h3>
+	<div id="store" style="border: 3px black solid"></div>
+	
+    <script type="text/javascript">
+
+	// localStorage.clear();
+
+// add2Store();
+
+alert('localStorage: ' + localStorage.length);
+/*	
+var kevin = localStorage.kevin;
+var ayla = localStorage['ayla'];
+var cem = localStorage.getItem('cem');
+var device = localStorage.getItem('device');
+
+var str = 'cem ' + cem + '<br>' +'ayla ' + ayla + '<br>' + 'kevin ' +  kevin + '<br>' + 'device: ' + device;
+
+document.getElementById('container').innerHTML = str;
+// document.getElementById('container').innerHTML = dump(localStorage);
+*/
+
+        var keys = Object.keys(localStorage);
+        for(var i, key; key = keys[i]; i++) {
+            console.log('key: ' + key);
+            var z = localStorage.getItem(key);
+            console.log('local: ' + z);
+        }
+		
+var store = '';
+for(key in localStorage)
+{
+	store += '<br>' + key;
+	if (localStorage[key])
+	{
+		store += ' : ' + localStorage[key];
+	}
+	
+}
+document.getElementById('store').innerHTML = store;		
+		
+	</script>
+	
+	</body>
+
+</html>

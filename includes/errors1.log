@@ -1,0 +1,17 @@
+ ___ 131229-124516 : ERROR: 2
+---C:\wamp\www\ixBackup\trackMe\includes\ajax\respondAjax.php
+---23
+---require_once(C:\wamp\www\ixBackup\trackMe\includes/includes/config4.php): failed to open stream: No such file or directory
+___ ___ 131229-124537 : ERROR: 2
+---C:\wamp\www\ixBackup\trackMe\includes\ajax\respondAjax.php
+---23
+---require_once(C:\wamp\www\ixBackup\trackMe\includes/includes/config4.php): failed to open stream: No such file or directory
+___ ___ 131229-124958 : ERROR: 2
+---C:\wamp\www\ixBackup\trackMe\includes\ajax\respondAjax.php
+---23
+---require_once(C:\wamp\www\ixBackup\trackMe\includes/includes/config4.php): failed to open stream: No such file or directory
+___ ___ 131229-124958 : ERROR: 2
+---C:\wamp\www\ixBackup\trackMe\includes\ajax\respondAjax.php
+---23
+---require_once(C:\wamp\www\ixBackup\trackMe\includes/includes/config4.php): failed to open stream: No such file or directory
+___
